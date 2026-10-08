@@ -1,0 +1,419 @@
+:root {
+    --azul: #0F2A4A;
+    --azul-claro: #1D4272;
+    --amarelo: #F6E27F;
+    --amarelo-escuro: #E9CF55;
+    --fundo: #FBF8EA;
+    --branco: #fff;
+    --texto: #14213A;
+    --borda: #C9D1DE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header h2 {
+    margin: 0;
+    color: var(--amarelo);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+header a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+header > div {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* CONTEÚDO */
+
+main {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-top: 6px solid var(--amarelo);
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--azul);
+    margin-top: 0;
+}
+
+main p {
+    color: #14213A;
+}
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--amarelo);
+    border-color: var(--azul-claro);
+}
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* BOTÕES DO FORMULÁRIO */
+
+#form-orcamento button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Enviar solicitação */
+
+#form-orcamento button[type="submit"] {
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 2px solid var(--azul);
+}
+
+#form-orcamento button[type="submit"]:hover {
+    background-color: var(--azul-claro);
+}
+
+/* Cancelar */
+
+#form-orcamento button[type="reset"] {
+    background-color: var(--branco);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
+#form-orcamento button[type="reset"]:hover {
+    background-color: var(--fundo);
+}
+
+/* TEXTOS DO FORMULÁRIO */
+
+#form-orcamento label {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+#form-orcamento input,
+#form-orcamento textarea,
+#form-orcamento select {
+    color: var(--texto);
+}
+
+main h1 {
+    color: var(--azul);
+}
+
+main p {
+    color: #526078;
+}
+
+
+/* COR DO LOGO */
+
+.destaque {
+    color: var(--amarelo);
+}
+
+/* PÁGINA DE SOLICITAÇÕES */
+
+.pagina-solicitacoes {
+    max-width: 1000px;
+    min-height: 450px;
+}
+
+.filtros-solicitacoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.filtros-solicitacoes label {
+    color: var(--azul);
+    white-space: nowrap;
+}
+
+.filtros-solicitacoes select {
+    max-width: 220px;
+}
+
+#lista-solicitacoes {
+    display: grid;
+    gap: 20px;
+}
+
+.card-solicitacao {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.card-solicitacao h3 {
+    color: var(--azul);
+    margin-top: 0;
+}
+
+.card-solicitacao p {
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+.status-solicitacao {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-pendente {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
+.status-aceita {
+    background-color: #d9f3df;
+    color: #21643a;
+}
+
+.status-recusada {
+    background-color: #ffe1e1;
+    color: #9c2525;
+}
+
+.acoes-solicitacao {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.acoes-solicitacao button {
+    flex: 1;
+    padding: 12px;
+}
+
+.btn-aceitar {
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 2px solid var(--azul);
+}
+
+.btn-recusar {
+    background-color: var(--branco);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
+/* PÁGINA DE AVALIAÇÃO */
+
+.pagina-avaliacao {
+    max-width: 650px;
+}
+
+#form-avaliacao {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+#form-avaliacao label {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+#form-avaliacao button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-avaliacao button[type="submit"] {
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 2px solid var(--azul);
+}
+
+#form-avaliacao button[type="reset"] {
+    background-color: var(--branco);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
+#mensagem-avaliacao {
+    font-weight: bold;
+    color: #21643a;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    .filtros-solicitacoes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filtros-solicitacoes select {
+        max-width: none;
+    }
+
+    .acoes-solicitacao {
+        flex-direction: column;
+    }
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 30px 24px 15px;
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-logo span {
+    color: var(--amarelo);
+}
+
+.footer-logo p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links h4 {
+    color: var(--amarelo);
+    margin: 0 0 5px;
+}
+
+.footer-links a {
+    color: var(--branco);
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.footer-final {
+    border-top: 1px solid var(--azul-claro);
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main.pagina-solicitacoes {
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .footer-conteudo {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
