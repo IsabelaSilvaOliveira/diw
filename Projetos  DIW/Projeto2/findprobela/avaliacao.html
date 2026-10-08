@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Serviço - FindPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Find<span class="destaque">Pro</span></h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Buscar profissionais</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Quem somos</a>
+        </nav>
+
+        <div>
+            <a href="#">Entrar</a>
+            <a href="#">Cadastrar</a>
+        </div>
+    </header>
+
+    <main class="pagina-avaliacao">
+        <h1>Avaliar Serviço</h1>
+        <p>Conte como foi sua experiência com o profissional.</p>
+
+        <form id="form-avaliacao">
+
+            <label for="profissional">Nome do profissional</label>
+            <input
+                type="text"
+                id="profissional"
+                placeholder="Nome do profissional"
+                required
+            >
+
+            <label for="servico">Serviço realizado</label>
+            <input
+                type="text"
+                id="servico"
+                placeholder="Ex: Instalação elétrica"
+                required
+            >
+
+            <label for="nota">Sua avaliação</label>
+
+            <select id="nota" required>
+                <option value="">Selecione uma nota</option>
+                <option value="5">★★★★★ - Excelente</option>
+                <option value="4">★★★★☆ - Muito bom</option>
+                <option value="3">★★★☆☆ - Bom</option>
+                <option value="2">★★☆☆☆ - Regular</option>
+                <option value="1">★☆☆☆☆ - Ruim</option>
+            </select>
+
+            <label for="comentario">Comentário</label>
+            <textarea
+                id="comentario"
+                placeholder="Descreva como foi o atendimento e o serviço realizado"
+                required
+            ></textarea>
+
+            <button type="submit">Enviar avaliação</button>
+            <button type="reset">Cancelar</button>
+
+        </form>
+
+        <p id="mensagem-avaliacao" role="status"></p>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-logo">
+                <h2>Find<span>Pro</span></h2>
+                <p>Conectando você ao profissional<br>certo.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Plataforma</h4>
+                    <a href="#">Como funciona</a>
+                    <a href="#">Buscar profissionais</a>
+                    <a href="#">Seja um prestador</a>
+                </div>
+
+                <div>
+                    <h4>Institucional</h4>
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Quem somos</a>
+                    <a href="#">Contato</a>
+                </div>
+
+                <div>
+                    <h4>Legal</h4>
+                    <a href="#">Termos de uso</a>
+                    <a href="#">Política de privacidade</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-final">
+            © 2026 FindPro, plataforma de serviços locais
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

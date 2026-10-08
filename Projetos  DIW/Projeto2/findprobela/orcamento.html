@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Orçamento - FindPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>FindPro</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Buscar profissionais</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Quem somos</a>
+        </nav>
+
+        <div>
+            <a href="#">Entrar</a>
+            <a href="#">Cadastrar</a>
+        </div>
+    </header>
+
+<main>
+    <h1>Solicitação de Orçamento</h1>
+    <p>Preencha as informações para solicitar um orçamento ao profissional.</p>
+
+    <form id="form-orcamento">
+
+        <label for="descricao">Descrição do serviço necessário</label>
+        <input type="text" id="descricao" name="descricao"
+               placeholder="Ex: Instalação de tomada" required>
+
+        <label for="informacoes">Informações adicionais</label>
+        <textarea id="informacoes" name="informacoes"
+                  placeholder="Descreva mais detalhes sobre o serviço"></textarea>
+
+        <label for="cidade">Bairro / Cidade</label>
+        <input type="text" id="cidade" name="cidade"
+               placeholder="Ex: Pampulha, Belo Horizonte" required>
+
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep"
+               placeholder="00000-000" maxlength="9" required>
+
+        <label for="data">Data desejada</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="periodo">Período preferido</label>
+        <select id="periodo" name="periodo" required>
+            <option value="">Selecione...</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <label for="telefone">Telefone para contato</label>
+        <input type="tel" id="telefone" name="telefone"
+               placeholder="(31) 99999-9999" required>
+
+        <div>
+            <input type="checkbox" id="whatsapp" name="whatsapp">
+            <label for="whatsapp">Aceito receber contato por WhatsApp</label>
+        </div>
+
+        <button type="submit">Enviar solicitação</button>
+        <button type="reset">Cancelar</button>
+
+    </form>
+</main>
+
+<footer>
+    <div class="footer-conteudo">
+        <div class="footer-logo">
+            <h2>Find<span>Pro</span></h2>
+            <p>Conectando você ao profissional<br>certo.</p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h4>Plataforma</h4>
+                <a href="#">Como funciona</a>
+                <a href="#">Buscar profissionais</a>
+                <a href="#">Seja um prestador</a>
+            </div>
+
+            <div>
+                <h4>Institucional</h4>
+                <a href="#">Sobre nós</a>
+                <a href="#">Quem somos</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-final">
+        © 2026 FindPro, plataforma de serviços locais
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
