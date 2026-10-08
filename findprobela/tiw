@@ -1,0 +1,79 @@
+
+1. Dados gerais
+Preencha a primeira tabela assim:
+Campo	O que colocar
+Projeto	FindPro — Plataforma de conexão entre clientes e prestadores de serviços
+Aluno	Isabela Silva Oliveira
+Título do Artefato	Solicitação de Orçamentos, Gerenciamento de Solicitações e Avaliação de Serviços
+Link alternativo na Internet (URL)	Não disponível na Internet (se ainda não publicaram o site)
+Descrição:
+Implementação das funcionalidades de solicitação de orçamentos, gerenciamento de solicitações recebidas e avaliação de serviços da plataforma FindPro. O cliente pode solicitar um orçamento informando os detalhes do serviço, localização, data desejada e contato. O prestador pode visualizar as solicitações recebidas, filtrar por status e aceitar ou recusar os pedidos. Além disso, o cliente pode avaliar o serviço realizado, atribuindo uma nota e escrevendo um comentário.
+
+
+
+
+2. Apresentação das principais telas
+O professor colocou três espaços para imagens. Você pode utilizar uma captura de tela para cada funcionalidade.
+Figura	Título	Print que você deve colocar
+1	Formulário de Solicitação de Orçamento	Página orcamento.html, mostrando o formulário e o botão Enviar solicitação
+2	Gerenciamento de Solicitações Recebidas	Página solicitacoes.html, mostrando as solicitações, status e filtro
+3	Avaliação do Serviço	Página avaliacao.html, mostrando a nota, o comentário e o botão de enviar
+Importante: use prints das páginas que você realmente desenvolveu, e não das wireframes.
+3. Orientação de testes da avaliação
+Na segunda página, o professor pede quatro cenários de teste. Como você desenvolveu três funcionalidades, podemos dividir a parte de solicitações recebidas em dois testes: aceitar e recusar.
+Abaixo está o conteúdo para preencher cada linha da tabela.
+Teste 1 — Solicitação de orçamento
+Cenário: Enviar solicitação de orçamento
+Pré-condições: Site funcional e página de solicitação de orçamento disponível.
+Ações:
+1. Acessar a página de solicitação de orçamento.
+2. Preencher a descrição do serviço e as informações adicionais.
+3. Informar bairro/cidade, CEP, data desejada, período e telefone.
+4. Clicar no botão "Enviar solicitação".
+Resultados esperados: O sistema deve validar os campos obrigatórios, registrar a solicitação e apresentar uma confirmação ao cliente.
+
+Teste 2 — Aceitar solicitação
+Cenário: Aceitar solicitação recebida
+Pré-condições: Site funcional e existência de uma solicitação com status pendente.
+Ações:
+1. Acessar a página de solicitações recebidas.
+2. Localizar uma solicitação pendente.
+3. Visualizar as informações do serviço.
+4. Clicar no botão "Aceitar".
+Resultados esperados: O sistema deve atualizar o status da solicitação para "Aceita" e apresentar a alteração na lista.
+
+Teste 3 — Recusar solicitação
+Cenário: Recusar solicitação recebida
+Pré-condições: Site funcional e existência de uma solicitação com status pendente.
+Ações:
+1. Acessar a página de solicitações recebidas.
+2. Localizar uma solicitação pendente.
+3. Clicar no botão "Recusar".
+4. Verificar o status da solicitação.
+Resultados esperados: O sistema deve atualizar o status para "Recusada" e permitir a visualização da solicitação por meio do filtro de status.
+
+Teste 4 — Avaliação do serviço
+Cenário: Enviar avaliação de serviço
+Pré-condições: Site funcional e página de avaliação disponível.
+Ações:
+1. Acessar a página de avaliação do serviço.
+2. Selecionar a nota do profissional.
+3. Escrever um comentário sobre o serviço realizado.
+4. Clicar no botão "Enviar avaliação".
+Resultados esperados: O sistema deve validar os dados, registrar a avaliação e apresentar uma mensagem de confirmação.
+
+
+4. Antes de entregar
+Confira se esses resultados realmente acontecem no seu JavaScript. Os resultados acima são o comportamento esperado, não uma confirmação de que todos já estão implementados.
+Checklist da entrega
+0 de 7
+
+
+
+[ ] Preencher os dados gerais com seu nome e as funcionalidades
+[ ] Inserir os três prints reais das páginas
+[ ] Preencher os quatro cenários de teste
+[ ] Testar o envio de orçamento
+[ ] Testar os botões Aceitar e Recusar
+[ ] Testar o envio da avaliação
+[ ] Salvar o documento final em PDF
